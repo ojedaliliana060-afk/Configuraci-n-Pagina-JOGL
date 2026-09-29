@@ -39,7 +39,7 @@ public class ConfiguracionPaginaJOGL extends JFrame implements GLEventListener {
         setLocationRelativeTo(null);
         setLayout(null);
 
-        // Configuración explícita del perfil
+        // Configuracion explicita del perfil
         GLProfile profile = GLProfile.get(GLProfile.GL2);
         GLCapabilities capabilities = new GLCapabilities(profile);
 
@@ -89,7 +89,7 @@ public class ConfiguracionPaginaJOGL extends JFrame implements GLEventListener {
         spinMargenSuperior.setBounds(180, 125, 60, 30);
         add(spinMargenSuperior);
 
-        // Control de Orientación
+        // Control de Orientacion
         JLabel lblOrientacion = new JLabel("Orientación de página.");
         lblOrientacion.setBounds(330, 20, 200, 20);
         lblOrientacion.setFont(new Font("SansSerif", Font.BOLD, 12));
@@ -100,7 +100,7 @@ public class ConfiguracionPaginaJOGL extends JFrame implements GLEventListener {
         comboOrientacion.setBounds(330, 45, 200, 25);
         add(comboOrientacion);
 
-        // Botón Reset
+        // Boton Reset
         btnInicializar = new JButton("Inicializar");
         btnInicializar.setBounds(50, 240, 180, 30);
         add(btnInicializar);
@@ -176,7 +176,7 @@ public class ConfiguracionPaginaJOGL extends JFrame implements GLEventListener {
             gl.glVertex2f(xMin, yMax);
         gl.glEnd();
 
-        // Márgenes azules
+        // Msrgenes azules
         float posMargenSup = yMax - margenSuperior;
         float posMargenInf = yMin + margenInferior;
 
